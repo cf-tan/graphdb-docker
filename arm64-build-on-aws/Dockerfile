@@ -31,3 +31,4 @@ ENTRYPOINT ["/opt/graphdb/dist/bin/graphdb"]
 
 EXPOSE 7200
 EXPOSE 7300
+EXPOSE 8080

@@ -1,6 +1,7 @@
 FROM eclipse-temurin:11-jdk-alpine
 
 # Build time arguments
+# docker run -d -p 8080:8080 --name iskb-test -t  ontotext/graphdb:10.2.2
 ARG version=10.2.2
 
 ENV GRAPHDB_PARENT_DIR=/opt/graphdb
@@ -31,3 +32,4 @@ ENTRYPOINT ["/opt/graphdb/dist/bin/graphdb"]
 
 EXPOSE 7200
 EXPOSE 7300
+EXPOSE 8080
